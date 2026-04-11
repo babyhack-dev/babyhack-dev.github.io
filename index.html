@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VoiceIME · macOS AI 输入助手</title>
+    <meta
+      name="description"
+      content="VoiceIME 是一款面向 macOS 的 AI 输入助手，将语音转录、AI 润色、智能回复、智能发音与截图 OCR 整合进统一的菜单栏工作流。"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="hero">
+        <nav class="nav container">
+          <a class="brand" href="#top">
+            <span class="brand-mark">V</span>
+            <span>VoiceIME</span>
+          </a>
+          <div class="nav-links">
+            <a href="#features">功能</a>
+            <a href="#workflow">流程</a>
+            <a href="#scenes">场景</a>
+            <a href="#install">安装说明</a>
+            <a href="#faq">FAQ</a>
+          </div>
+          <a class="nav-button" href="https://github.com/babyhack-dev" target="_blank" rel="noreferrer">关于作者</a>
+        </nav>
+
+        <section class="hero-main container" id="top">
+          <div class="hero-copy">
+            <span class="eyebrow">macOS · Menu Bar · AI Input Assistant</span>
+            <h1><span>让输入更快，</span><br /><span>也更高级。</span></h1>
+            <p class="hero-desc">
+              面向 macOS 的 AI 输入助手，把语音转录、AI 润色、智能回复、朗读与 OCR 融合进同一套顺滑工作流。
+            </p>
+            <div class="hero-actions">
+              <a class="button primary hero-cta" href="#download" rel="noreferrer"><span>快速安装体验</span></a>
+              <a class="button secondary" href="#features">查看核心功能</a>
+            </div>
+            <div class="hero-meta">
+              <span>适用于 macOS</span>
+              <span>全局快捷键</span>
+              <span>智能回复</span>
+              <span>Coli 流式语音转录</span>
+            </div>
+            <div class="hero-proof">
+              <span>下载后即可安装</span>
+              <span>支持 Coli 本地流式转录</span>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="device-stage">
+              <div class="device-window main-window">
+                <div class="window-top">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="window-body">
+                  <aside class="window-side">
+                    <div class="side-chip active">发言角色</div>
+                    <div class="side-chip">回复角色</div>
+                    <div class="side-chip">智能回复</div>
+                    <div class="side-chip">智能发音</div>
+                    <div class="side-chip">截图 OCR</div>
+                  </aside>
+                  <div class="window-content">
+                    <div class="content-tag">回复角色</div>
+                    <h3>多角色并发生成，快速切到合适语气</h3>
+                    <div class="role-list-preview">
+                      <div class="role-row active">
+                        <div>
+                          <strong>语言大师</strong>
+                          <p>你是“语言大师”发言润色助手，只对当前输入做最小必要优化。</p>
+                        </div>
+                        <span>已启用</span>
+                      </div>
+                      <div class="role-row">
+                        <div>
+                          <strong>老板</strong>
+                          <p>保留原意，语气更凝练，适合管理沟通与任务安排。</p>
+                        </div>
+                        <span>待启用</span>
+                      </div>
+                      <div class="role-row">
+                        <div>
+                          <strong>员工</strong>
+                          <p>表达更清晰礼貌，适合汇报、确认和协作回复。</p>
+                        </div>
+                        <span>待启用</span>
+                      </div>
+                    </div>
+                    <div class="mini-toolbar">
+                      <span>单选激活</span>
+                      <span>拖拽排序</span>
+                      <span>快速编辑</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="floating-panel reply-panel">
+                <div class="panel-title">回复角色</div>
+                <div class="reply-item">
+                  <span>老板</span>
+                  <p>收到，登录已完成，后续按流程继续推进即可。</p>
+                </div>
+                <div class="reply-item active">
+                  <span>员工</span>
+                  <p>好的，已登录成功，我这边继续下一步操作。</p>
+                </div>
+              </div>
+
+              <div class="floating-panel shortcut-panel">
+                <div class="panel-title">快捷入口</div>
+                <div class="shortcut-row"><b>⌘⇧O</b><span>开始录音</span></div>
+                <div class="shortcut-row"><b>⌃⇧U</b><span>智能回复</span></div>
+                <div class="shortcut-row"><b>⌘⇧I</b><span>智能发音</span></div>
+                <div class="shortcut-row"><b>⌘⇧P</b><span>截图 OCR</span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
+
+      <main>
+        <section class="stats container">
+          <div class="stat-card">
+            <strong>5</strong>
+            <span>核心能力 / 工具入口</span>
+          </div>
+          <div class="stat-card">
+            <strong>Menu Bar</strong>
+            <span>常驻系统级工作流</span>
+          </div>
+          <div class="stat-card">
+            <strong>AI + OCR</strong>
+            <span>输入链路一体化</span>
+          </div>
+          <div class="stat-card">
+            <strong>HTTP + CLI</strong>
+            <span>支持灵活接入</span>
+          </div>
+        </section>
+
+        <section class="section container intro-block">
+          <div class="section-heading narrow">
+            <span class="eyebrow soft">更像一个输入层，而不是单点工具</span>
+            <h2>VoiceIME 不只把声音转成字，而是把“输入前后的动作”一起接住。</h2>
+            <p>
+              把获取内容、处理文本与输出结果收进一条更连贯的链路里，减少切换。
+            </p>
+          </div>
+        </section>
+
+        <section class="section container" id="features">
+          <div class="section-heading">
+            <span class="eyebrow soft">核心能力</span>
+            <h2>核心功能</h2>
+            <p>把高频输入场景需要的能力整合到一个统一入口。</p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card featured">
+              <span class="feature-kicker">Speech Input</span>
+              <h3>语音转录</h3>
+              <p>按住快捷键开始录音即可看到实时预览；支持 HTTP STT，也支持 Coli 本地流式语音转录，松开后继续 AI 优化与注入。</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-kicker">AI Polish</span>
+              <h3>AI 优化</h3>
+              <p>把口语表达整理成更自然、更准确、更适合聊天或邮件场景的文本。</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-kicker">Smart Reply</span>
+              <h3>智能回复</h3>
+              <p>多角色并发输出，适合翻译、润色、不同语气回复和多版本快速对比。</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-kicker">Pronunciation</span>
+              <h3>智能发音</h3>
+              <p>支持选中文本朗读、回复结果发音与音色配置，适合语言练习与内容校对。</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-kicker">Screen OCR</span>
+              <h3>截图 OCR</h3>
+              <p>快速框选屏幕区域提取文字；现支持文字识别与二维码识别模式切换，网页、图片、PDF、登录码和群二维码都能继续进入处理流程。</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-kicker">Flexible Access</span>
+              <h3>灵活接入</h3>
+              <p>支持 OpenAI Compatible HTTP 接入，也支持 Coli 本地 CLI 语音转录，兼顾云端服务与本地实时识别。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section container screenshot-section">
+          <div class="section-heading">
+            <span class="eyebrow soft">界面预览</span>
+            <h2>界面预览</h2>
+            <p>快速浏览主要配置页面与新增能力。</p>
+          </div>
+          <div class="settings-gallery">
+            <div class="settings-carousel-shell" data-settings-carousel>
+              <button class="carousel-arrow prev" type="button" aria-label="上一张">‹</button>
+              <div class="settings-carousel-viewport">
+                <div class="settings-carousel-track">
+                  <article class="settings-slide is-active" data-title="语音转录配置" data-desc="支持 HTTP / CLI Provider 分类切换；新增 Coli 本地语音转录、安装检测与流式预览。">
+                    <div class="settings-shell settings-shell--app">
+                      <aside class="settings-sidebar dark">
+                        <div class="settings-group-title">基础能力</div>
+                        <div class="settings-item">账号认证</div>
+                        <div class="settings-item">快捷键</div>
+                        <div class="settings-item">智能发音</div>
+                        <div class="settings-item active">语音转录</div>
+                        <div class="settings-item">AI 优化</div>
+                        <div class="settings-group-title muted">应用设置</div>
+                        <div class="settings-item">语言设置</div>
+                        <div class="settings-item">应用日志</div>
+                        <div class="settings-version">v2.3.4 (19)</div>
+                      </aside>
+                      <div class="settings-main dark-surface">
+                        <div class="settings-topline">
+                          <h3>语音转录</h3>
+                          <span class="settings-badge">HTTP / CLI</span>
+                        </div>
+                        <p class="settings-lead">按类型切换 HTTP 与 CLI Provider；HTTP 保留 Base URL / Model，Coli 直接显示本地安装状态。</p>
+                        <div class="settings-form-card">
+                          <div class="form-row"><span>Provider 类型</span><b>CLI</b></div>
+                          <div class="form-row"><span>Provider</span><b>Coli</b></div>
+                          <div class="form-row"><span>安装路径</span><b>/opt/homebrew/bin/coli · 已安装</b></div>
+                          <div class="form-row"><span>安装命令</span><b>brew install ffmpeg && npm install -g @marswave/coli</b></div>
+                          <div class="form-actions"><button>测试连接</button><button class="primary">保存</button></div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="settings-slide" data-title="智能发音与音色配置" data-desc="配置默认音色，直接朗读选中文本或回复内容，保持当前暗色、原生感的产品风格。">
+                    <div class="settings-shell settings-shell--app">
+                      <aside class="settings-sidebar dark">
+                        <div class="settings-group-title">基础能力</div>
+                        <div class="settings-item">账号认证</div>
+                        <div class="settings-item">快捷键</div>
+                        <div class="settings-item active">智能发音</div>
+                        <div class="settings-item">语音转录</div>
+                        <div class="settings-item">AI 优化</div>
+                        <div class="settings-group-title muted">应用设置</div>
+                        <div class="settings-item">语言设置</div>
+                        <div class="settings-item">应用日志</div>
+                        <div class="settings-version">v2.3.4 (19)</div>
+                      </aside>
+                      <div class="settings-main dark-surface">
+                        <div class="settings-topline">
+                          <h3>智能发音</h3>
+                          <span class="settings-badge">Edge TTS</span>
+                        </div>
+                        <p class="settings-lead">支持自定义 Base URL、默认音色与试听文本，适合校对、练习与结果朗读。</p>
+                        <div class="settings-form-card">
+                          <div class="form-row"><span>Base URL</span><b>https://tts.wangwanggit.com</b></div>
+                          <div class="form-row"><span>默认音色</span><b>晓晓（温柔）</b></div>
+                          <div class="form-row"><span>试听文本</span><b>你好，这里是 VoiceIME 的智能发音试听。</b></div>
+                          <div class="form-actions"><button>试听当前音色</button><button class="primary">保存</button></div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="settings-slide" data-title="回复角色预览" data-desc="新增回复角色配置预览，支持单选启用、编辑提示词与不同沟通身份的快速切换。">
+                    <div class="settings-shell settings-shell--app">
+                      <aside class="settings-sidebar dark">
+                        <div class="settings-group-title">基础能力</div>
+                        <div class="settings-item">账号认证</div>
+                        <div class="settings-item">快捷键</div>
+                        <div class="settings-item">语音转录</div>
+                        <div class="settings-item">智能回复</div>
+                        <div class="settings-group-title muted">Prompt</div>
+                        <div class="settings-item">发言角色</div>
+                        <div class="settings-item active">回复角色</div>
+                        <div class="settings-group-title muted">应用设置</div>
+                        <div class="settings-item">权限检查</div>
+                        <div class="settings-item">应用日志</div>
+                        <div class="settings-version">v2.3.4 (19)</div>
+                      </aside>
+                      <div class="settings-main dark-surface">
+                        <div class="settings-topline">
+                          <h3>回复角色</h3>
+                          <span class="settings-badge">Prompt</span>
+                        </div>
+                        <p class="settings-lead">不同场景使用不同的 AI 回复角色，通过 Menu Bar 一键切换（单选激活），拖拽可调整顺序。</p>
+                        <div class="reply-role-board">
+                          <div class="reply-role-row active">
+                            <div class="reply-role-check"></div>
+                            <div class="reply-role-copy">
+                              <strong>语言大师</strong>
+                              <p>你是“语言大师”发言润色助手，只对当前输入做最小必要优化。</p>
+                            </div>
+                            <div class="reply-role-actions"><button>编辑</button><button>删除</button></div>
+                          </div>
+                          <div class="reply-role-row">
+                            <div class="reply-role-check muted"></div>
+                            <div class="reply-role-copy">
+                              <strong>老板</strong>
+                              <p>任务是润色用户原文，不改核心意思，不扩写无关内容。</p>
+                            </div>
+                            <div class="reply-role-actions"><button>编辑</button><button>删除</button></div>
+                          </div>
+                          <div class="reply-role-row">
+                            <div class="reply-role-check muted"></div>
+                            <div class="reply-role-copy">
+                              <strong>员工</strong>
+                              <p>只做必要优化，保持简洁直接，通常不超过原文约 1.8 倍。</p>
+                            </div>
+                            <div class="reply-role-actions"><button>编辑</button><button>删除</button></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="settings-slide" data-title="工具魔盒与二维码能力" data-desc="新增工具魔盒，支持二维码生成、图片复制、居中预览；截图 OCR 也支持二维码识别。">
+                    <div class="settings-shell settings-shell--app">
+                      <aside class="settings-sidebar dark">
+                        <div class="settings-group-title">基础能力</div>
+                        <div class="settings-item">账号认证</div>
+                        <div class="settings-item">快捷键</div>
+                        <div class="settings-item">AI 优化</div>
+                        <div class="settings-group-title muted">百宝箱</div>
+                        <div class="settings-item active">工具魔盒</div>
+                        <div class="settings-group-title muted">应用设置</div>
+                        <div class="settings-item">权限检查</div>
+                        <div class="settings-item">应用日志</div>
+                        <div class="settings-version">v2.3.4 (19)</div>
+                      </aside>
+                      <div class="settings-main dark-surface">
+                        <div class="settings-topline">
+                          <h3>工具魔盒</h3>
+                          <span class="settings-badge hot">NEW</span>
+                        </div>
+                        <p class="settings-lead">二维码生成与二维码识别能力已打通，适合登录码、设备配网和群二维码等场景。</p>
+                        <div class="toolbox-preview">
+                          <div class="toolbox-toolbar">
+                            <span>工具</span>
+                            <div class="tool-pill">二维码生成</div>
+                          </div>
+                          <div class="toolbox-panel">
+                            <div class="toolbox-input"></div>
+                            <div class="toolbox-qr">
+                              <div class="fake-qr"></div>
+                            </div>
+                          </div>
+                          <div class="toolbox-note">
+                            <span class="caption-pill">新增 · OCR 支持二维码识别</span>
+                            <p>截图时可在顶部模式条切换文字识别 / 二维码识别。</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <button class="carousel-arrow next" type="button" aria-label="下一张">›</button>
+            </div>
+            <div class="settings-carousel-footer">
+              <div class="carousel-progress"><span></span></div>
+              <div class="carousel-dots" role="tablist" aria-label="设置预览切换">
+                <button class="is-active" type="button" aria-label="切换到语音转录"></button>
+                <button type="button" aria-label="切换到智能发音"></button>
+                <button type="button" aria-label="切换到回复角色"></button>
+                <button type="button" aria-label="切换到工具魔盒"></button>
+              </div>
+              <div class="carousel-caption">
+                <span class="caption-pill">语音转录配置</span>
+                <p>支持 HTTP / CLI Provider 分类切换；新增 Coli 本地语音转录、安装检测与流式预览。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-soft">
+          <div class="container workflow-wrap" id="workflow">
+            <div class="section-heading left">
+              <span class="eyebrow soft">使用流程</span>
+              <h2>四步完成一次更顺手的输入</h2>
+              <p>从唤起到输出，流程清晰直接。</p>
+            </div>
+            <div class="steps-grid">
+              <article class="step-card">
+                <span class="step-no">01</span>
+                <h3>唤起功能</h3>
+                <p>通过菜单栏或快捷键进入录音、回复、发音或 OCR。</p>
+              </article>
+              <article class="step-card">
+                <span class="step-no">02</span>
+                <h3>获取内容</h3>
+                <p>接收语音、当前选中文本，或截图识别出来的文字。</p>
+              </article>
+              <article class="step-card">
+                <span class="step-no">03</span>
+                <h3>AI 处理</h3>
+                <p>根据角色、提示词与服务配置生成更适合当前场景的结果。</p>
+              </article>
+              <article class="step-card">
+                <span class="step-no">04</span>
+                <h3>直接输出</h3>
+                <p>注入当前输入框，或继续朗读、复制、比对，减少来回切换。</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section container" id="scenes">
+          <div class="section-heading">
+            <span class="eyebrow soft">适用场景</span>
+            <h2>适合这些高频输入场景</h2>
+            <p>覆盖聊天、写作、翻译与截图取字等常见场景。</p>
+          </div>
+          <div class="scene-grid">
+            <article class="scene-card">
+              <h3>聊天沟通</h3>
+              <p>适合微信、飞书、Slack、IM 回复，先说再发，减少打字停顿。</p>
+            </article>
+            <article class="scene-card">
+              <h3>邮件与文档</h3>
+              <p>先口述，再通过 AI 整理成更正式、更清晰的书面表达。</p>
+            </article>
+            <article class="scene-card">
+              <h3>双语翻译</h3>
+              <p>一键得到中英互译和多种风格版本，回复更快，也更稳。</p>
+            </article>
+            <article class="scene-card">
+              <h3>截图取字</h3>
+              <p>从图片、网页、PDF 提取文本，也能直接识别二维码内容，再继续优化、朗读或复制使用。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section container install-section" id="install">
+          <div class="install-card-wide install-switcher" data-install-switcher>
+            <div class="install-head">
+              <div class="install-copy install-copy-wide">
+                <span class="eyebrow soft">快速安装</span>
+                <h2>几分钟内开始使用 VoiceIME。</h2>
+                <p><code>VoiceIME-v2.3.4-macOS.zip</code> 内同时包含 <code>install.sh</code> 与 <code>VoiceIME.dmg</code>，但站点仅提供 ZIP 下载入口。</p>
+              </div>
+              <div class="install-tabs" role="tablist" aria-label="安装方式切换">
+                <button class="install-tab is-active" type="button" role="tab" aria-selected="true" data-install-tab="cli">
+                  <span>CLI</span>
+                  <small>最快开始</small>
+                </button>
+                <button class="install-tab" type="button" role="tab" aria-selected="false" data-install-tab="dmg">
+                  <span>DMG</span>
+                  <small>原生拖拽安装</small>
+                </button>
+              </div>
+            </div>
+            <div class="install-panels">
+              <article class="install-panel is-active" data-install-panel="cli">
+                <div class="install-panel-copy">
+                  <span class="method-badge">Terminal UI</span>
+                  <h3>CLI 快速安装</h3>
+                  <p>适合想最快开始使用的用户。</p>
+                  <ul class="install-bullets">
+                    <li>下载并解压 ZIP</li>
+                    <li>运行 <code>./install.sh</code></li>
+                    <li>按提示完成授权</li>
+                  </ul>
+                </div>
+                <div class="install-visual-shell">
+                  <div class="terminal-card apple-terminal" aria-label="快速 CLI 安装">
+                    <div class="terminal-top">
+                      <span></span><span></span><span></span>
+                      <strong>Terminal UI</strong>
+                    </div>
+                    <div class="terminal-body compact-terminal">
+                      <div class="terminal-line"><span class="prompt">1.</span><code>下载并解压 VoiceIME-v2.3.4-macOS.zip</code></div>
+                      <div class="terminal-line bright"><span class="prompt">2.</span><code>./install.sh</code></div>
+                      <div class="terminal-line"><span class="prompt">3.</span><code>按提示完成授权</code></div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </article>
+              <article class="install-panel" data-install-panel="dmg">
+                <div class="install-panel-copy">
+                  <span class="method-badge">DMG 安装</span>
+                  <h3>DMG 图形安装</h3>
+                  <p>适合偏好原生拖拽安装的用户。</p>
+                  <ul class="install-bullets">
+                    <li>打开 <code>VoiceIME.dmg</code></li>
+                    <li>拖入 Applications</li>
+                    <li>如遇拦截，点击 <code>Open Anyway</code></li>
+                  </ul>
+                </div>
+                <div class="install-visual-shell">
+                  <div class="method-card apple-method-card" aria-label="DMG 图形安装">
+                    <ol class="method-steps">
+                      <li>打开 <code>VoiceIME.dmg</code> 并拖入 Applications</li>
+                      <li>首次启动如被拦截，前往 <b>系统设置 → 隐私与安全性</b></li>
+                      <li>点击 <b>Open Anyway</b> 后再次打开应用</li>
+                    </ol>
+                    <p class="method-tip">如果遇到系统拦截，允许 <b>Open Anyway</b> 后即可继续。</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section container cta-download" id="download">
+          <div class="download-card">
+            <div class="download-copy">
+              <span class="eyebrow soft">下载体验</span>
+              <h2>准备好开始体验 VoiceIME 了吗？</h2>
+              <p>站点仅提供 ZIP 安装包下载，解压后即可选择 CLI 或 DMG 安装。</p>
+              <div class="download-points">
+                <span>ZIP 安装包</span>
+                <span>内含 install.sh + DMG</span>
+                <span>包含最新 2.3.4</span>
+              </div>
+            </div>
+            <div class="download-actions">
+              <a class="button primary download-main" href="downloads/VoiceIME-v2.3.4-macOS.zip" target="_blank" rel="noreferrer">下载 VoiceIME v2.3.4 ZIP</a>
+              <p class="download-sub">直接下载 <code>VoiceIME-v2.3.4-macOS.zip</code>，解压后可运行 <code>./install.sh</code>，或打开 ZIP 内的 <code>VoiceIME.dmg</code> 安装。</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section container faq-section" id="faq">
+          <div class="faq-stage">
+            <div class="faq-stage-copy">
+              <span class="eyebrow soft">常见问题</span>
+              <h2>常见问题</h2>
+              <p>这里整理了首次安装与使用时最常见的问题。</p>
+              <div class="faq-glow-card">
+                <span class="caption-pill">v2.3.4 更新</span>
+                <p>新增 Coli 本地语音转录、录音阶段流式预览、回复角色预览，并同步更新 ZIP / DMG 双安装方式说明。</p>
+              </div>
+            </div>
+            <div class="faq-panel" data-faq>
+              <article class="faq-item is-open">
+                <button class="faq-question" type="button" aria-expanded="true">
+                  <span>VoiceIME 适合哪些场景？</span>
+                  <span class="faq-icon"></span>
+                </button>
+                <div class="faq-answer"><div class="faq-answer-inner"><p>适合聊天沟通、邮件撰写、文档整理、翻译回复，以及截图取字后的继续编辑。</p></div></div>
+              </article>
+              <article class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                  <span>为什么需要麦克风、辅助功能、屏幕录制等权限？</span>
+                  <span class="faq-icon"></span>
+                </button>
+                <div class="faq-answer"><div class="faq-answer-inner"><p>这些权限分别用于录音、文本注入、快捷键监听和截图 OCR / 二维码识别，是完成整条输入链路所必需的系统能力。</p></div></div>
+              </article>
+              <article class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                  <span>支持哪些接入方式？</span>
+                  <span class="faq-icon"></span>
+                </button>
+                <div class="faq-answer"><div class="faq-answer-inner"><p>可按需使用 ChatGPT OAuth，或接入兼容 OpenAI 协议的第三方 API。</p></div></div>
+              </article>
+              <article class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                  <span>安装后怎么开始用？</span>
+                  <span class="faq-icon"></span>
+                </button>
+                <div class="faq-answer"><div class="faq-answer-inner"><p>完成授权后，即可通过菜单栏或快捷键使用录音、智能回复、智能发音与截图 OCR。</p></div></div>
+              </article>
+              <article class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                  <span>首次安装建议怎么做？</span>
+                  <span class="faq-icon"></span>
+                </button>
+                <div class="faq-answer"><div class="faq-answer-inner"><p>建议优先下载 ZIP 安装包：可执行 <code>./install.sh</code>，或打开其中的 DMG。若首次启动被拦截，在“隐私与安全性”里点击 <code>Open Anyway</code> 即可。</p></div></div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer container">
+        <div>
+          <strong>VoiceIME</strong>
+          <p>macOS AI 输入助手</p>
+        </div>
+        <a href="#top">回到顶部 ↑</a>
+      </footer>
+    </div>
+  <script>
+(() => {
+  const carousel = document.querySelector('[data-settings-carousel]');
+  if (carousel) {
+    const track = carousel.querySelector('.settings-carousel-track');
+    const slides = Array.from(carousel.querySelectorAll('.settings-slide'));
+    const dots = Array.from(document.querySelectorAll('.carousel-dots button'));
+    const captionPill = document.querySelector('.carousel-caption .caption-pill');
+    const captionText = document.querySelector('.carousel-caption p');
+    let index = 0;
+    let timer = null;
+
+    const render = (nextIndex) => {
+      index = (nextIndex + slides.length) % slides.length;
+      track.style.transform = `translateX(-${index * 100}%)`;
+      slides.forEach((slide, i) => slide.classList.toggle('is-active', i === index));
+      dots.forEach((dot, i) => dot.classList.toggle('is-active', i === index));
+      captionPill.textContent = slides[index].dataset.title || '';
+      captionText.textContent = slides[index].dataset.desc || '';
+      const progress = document.querySelector('.carousel-progress span');
+      if (progress) {
+        progress.style.transition = 'none';
+        progress.style.width = '0%';
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            progress.style.transition = carousel.classList.contains('is-paused') ? 'none' : 'width 2.8s linear';
+            progress.style.width = '100%';
+          });
+        });
+      }
+    };
+
+    const autoplay = () => {
+      clearInterval(timer);
+      timer = setInterval(() => render(index + 1), 2800);
+    };
+
+    carousel.querySelector('.prev')?.addEventListener('click', () => { render(index - 1); autoplay(); });
+    carousel.querySelector('.next')?.addEventListener('click', () => { render(index + 1); autoplay(); });
+    dots.forEach((dot, i) => dot.addEventListener('click', () => { render(i); autoplay(); }));
+    carousel.addEventListener('mouseenter', () => { clearInterval(timer); carousel.classList.add('is-paused'); });
+    carousel.addEventListener('mouseleave', () => { carousel.classList.remove('is-paused'); autoplay(); });
+    render(0);
+    autoplay();
+  }
+
+  const installSwitcher = document.querySelector('[data-install-switcher]');
+  if (installSwitcher) {
+    const tabs = Array.from(installSwitcher.querySelectorAll('[data-install-tab]'));
+    const panels = Array.from(installSwitcher.querySelectorAll('[data-install-panel]'));
+    const activate = (target) => {
+      tabs.forEach((tab) => {
+        const active = tab.dataset.installTab === target;
+        tab.classList.toggle('is-active', active);
+        tab.setAttribute('aria-selected', active ? 'true' : 'false');
+      });
+      panels.forEach((panel) => {
+        panel.classList.toggle('is-active', panel.dataset.installPanel === target);
+      });
+    };
+    tabs.forEach((tab) => tab.addEventListener('click', () => activate(tab.dataset.installTab)));
+    activate('cli');
+  }
+
+  document.querySelectorAll('[data-faq] .faq-item').forEach((item, idx) => {
+    const btn = item.querySelector('.faq-question');
+    const answer = item.querySelector('.faq-answer');
+    const sync = (open) => {
+      item.classList.toggle('is-open', open);
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      answer.style.maxHeight = open ? `${answer.scrollHeight}px` : '0px';
+    };
+    sync(item.classList.contains('is-open') || idx === 0);
+    btn.addEventListener('click', () => {
+      const willOpen = !item.classList.contains('is-open');
+      document.querySelectorAll('[data-faq] .faq-item').forEach((other) => {
+        const otherBtn = other.querySelector('.faq-question');
+        const otherAnswer = other.querySelector('.faq-answer');
+        other.classList.remove('is-open');
+        otherBtn.setAttribute('aria-expanded', 'false');
+        otherAnswer.style.maxHeight = '0px';
+      });
+      sync(willOpen);
+    });
+  });
+})();
+</script>
+</body>
+</html>
