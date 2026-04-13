@@ -1,7 +1,7 @@
 {
-  "version": "2.5.0",
-  "build": "24",
-  "url": "https://babyhack-dev.github.io/downloads/VoiceIME-v2.5.0-macOS.zip",
+  "version": "2.5.1",
+  "build": "25",
+  "url": "https://babyhack-dev.github.io/downloads/VoiceIME-v2.5.1-macOS.zip",
   "publishedAt": "2026-04-14",
-  "notesMarkdown": "# VoiceIME v2.5.0\n\n\u53d1\u5e03\u65f6\u95f4\uff1a2026-04-14\n\n## \u66f4\u65b0\u5185\u5bb9\n\n- feat: polish about localization and self-update flow\n- chore: sync specs and archive completed openspec changes\n- fix: check demo repo status before syncing release artifacts"
+  "notesMarkdown": "# VoiceIME v2.5.1\n\n\u53d1\u5e03\u65f6\u95f4\uff1a2026-04-14\n\n## \u66f4\u65b0\u5185\u5bb9\n\n- fix: add explicit about update feedback"
 }
