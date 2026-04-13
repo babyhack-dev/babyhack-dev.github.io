@@ -1,7 +1,7 @@
 {
-  "version": "2.4.1",
-  "build": "22",
-  "url": "https://babyhack-dev.github.io/downloads/VoiceIME-v2.4.1-macOS.zip",
+  "version": "2.4.2",
+  "build": "23",
+  "url": "https://babyhack-dev.github.io/downloads/VoiceIME-v2.4.2-macOS.zip",
   "publishedAt": "2026-04-13",
-  "notesMarkdown": "# VoiceIME v2.4.1\n\n\u53d1\u5e03\u65f6\u95f4\uff1a2026-04-13\n\n## \u66f4\u65b0\u5185\u5bb9\n\n- chore: archive v2.4.0 openspec change"
+  "notesMarkdown": "# VoiceIME v2.4.2\n\n\u53d1\u5e03\u65f6\u95f4\uff1a2026-04-13\n\n## \u66f4\u65b0\u5185\u5bb9\n\n- chore: bump version to 2.4.2\n- fix: improve updater, compact about panel, and automate release site sync"
 }
