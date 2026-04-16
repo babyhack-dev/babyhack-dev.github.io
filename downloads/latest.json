@@ -1,7 +1,7 @@
 {
-  "version": "2.6.0",
-  "build": "30",
-  "url": "https://babyhack-dev.github.io/downloads/VoiceIME-v2.6.0-macOS.zip",
+  "version": "2.6.1",
+  "build": "31",
+  "url": "https://babyhack-dev.github.io/downloads/VoiceIME-v2.6.1-macOS.zip",
   "publishedAt": "2026-04-16",
-  "notesMarkdown": "# VoiceIME v2.6.0\n\n\u53d1\u5e03\u65f6\u95f4\uff1a2026-04-16\n\n## \u66f4\u65b0\u5185\u5bb9\n\n- Replace Coli CLI with native local ASR"
+  "notesMarkdown": "# VoiceIME v2.6.1\n\n\u53d1\u5e03\u65f6\u95f4\uff1a2026-04-16\n\n## \u66f4\u65b0\u5185\u5bb9\n\n- Fix local ASR model download lifecycle"
 }
