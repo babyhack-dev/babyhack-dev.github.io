@@ -1,7 +1,7 @@
 {
-  "version": "2.8.3",
-  "build": "36",
-  "url": "https://babyhack-dev.github.io/downloads/VoiceIME-v2.8.3-macOS.zip",
+  "version": "2.8.5",
+  "build": "38",
+  "url": "https://babyhack-dev.github.io/downloads/VoiceIME-v2.8.5-macOS.zip",
   "publishedAt": "2026-04-18",
-  "notesMarkdown": "# VoiceIME v2.8.3\n\n\u53d1\u5e03\u65f6\u95f4\uff1a2026-04-18\n\n## \u66f4\u65b0\u5185\u5bb9\n\n- fix: polish smart pronunciation output device tip\n- feat: add virtual pronunciation output device management\n- feat: extend smart pronunciation audio routing\n- feat: add system audio recording source for transcription\n- docs: archive voxcpm quality hints openspec change\n- feat: add voxcpm audio quality hints and log throttling\n- feat: polish voxcpm reference audio ux and cache\n- fix: polish voxcpm settings persistence and preview state\n- docs: archive voxcpm 2.8.0 openspec change\n- feat: polish voxcpm lifecycle and settings ux\n- feat: add local voxcpm pronunciation provider"
+  "notesMarkdown": "# VoiceIME v2.8.5\n\n\u53d1\u5e03\u65f6\u95f4\uff1a2026-04-18\n\n## \u66f4\u65b0\u5185\u5bb9\n\n- refactor: remove input monitoring dependency\n- fix: unify pronunciation preview state machine\n- fix: make release site sync anchors more resilient"
 }
