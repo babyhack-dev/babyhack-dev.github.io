@@ -6,7 +6,7 @@
     <title>VoiceIME · macOS AI 输入助手</title>
     <meta
       name="description"
-      content="VoiceIME 是一款面向 macOS 的 AI 输入助手，将语音转录、AI 润色、智能回复、智能发音与截图 OCR 整合进统一的菜单栏工作流。"
+      content="VoiceIME 是一款面向 macOS 的 AI 输入助手，将语音转录、AI 润色、智能回复、VoxCPM 本地智能发音与截图 OCR 整合进统一的菜单栏工作流。"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -33,7 +33,7 @@
             <span class="eyebrow">macOS · Menu Bar · AI Input Assistant</span>
             <h1><span>让输入更快，</span><br /><span>也更高级。</span></h1>
             <p class="hero-desc">
-              面向 macOS 的 AI 输入助手，把语音转录、AI 润色、智能回复、朗读与 OCR 融合进同一套顺滑工作流。
+              面向 macOS 的 AI 输入助手，把语音转录、AI 润色、智能回复、VoxCPM 本地克隆发音与 OCR 融合进同一套顺滑工作流。
             </p>
             <div class="hero-actions">
               <a class="button primary hero-cta" href="#download" rel="noreferrer"><span>快速安装体验</span></a>
@@ -43,11 +43,12 @@
               <span>适用于 macOS</span>
               <span>全局快捷键</span>
               <span>智能回复</span>
-              <span>Coli 流式语音转录</span>
+              <span>本地模型语音转录</span>
+              <span>VoxCPM 本地克隆</span>
             </div>
             <div class="hero-proof">
               <span>下载后即可安装</span>
-              <span>支持 Coli 本地流式转录</span>
+              <span>支持本地模型与 VoxCPM 自定义声音</span>
             </div>
           </div>
 
@@ -164,7 +165,7 @@
             <article class="feature-card featured">
               <span class="feature-kicker">Speech Input</span>
               <h3>语音转录</h3>
-              <p>按住快捷键开始录音即可看到实时预览；支持 HTTP STT，也支持 Coli 本地流式语音转录，松开后继续 AI 优化与注入。</p>
+              <p>按住快捷键开始录音即可看到实时预览；支持 HTTP STT，也支持本地模型语音转录，松开后继续 AI 优化与注入。</p>
             </article>
             <article class="feature-card">
               <span class="feature-kicker">AI Polish</span>
@@ -179,7 +180,7 @@
             <article class="feature-card">
               <span class="feature-kicker">Pronunciation</span>
               <h3>智能发音</h3>
-              <p>支持选中文本朗读、回复结果发音与音色配置，适合语言练习与内容校对。</p>
+              <p>支持 Edge TTS，也支持本地集成 VoxCPM：可基于参考音频做声音克隆、生成自定义声音并直接朗读选中文本或回复结果。</p>
             </article>
             <article class="feature-card">
               <span class="feature-kicker">Screen OCR</span>
@@ -189,7 +190,7 @@
             <article class="feature-card">
               <span class="feature-kicker">Flexible Access</span>
               <h3>灵活接入</h3>
-              <p>支持 OpenAI Compatible HTTP 接入，也支持 Coli 本地 CLI 语音转录，兼顾云端服务与本地实时识别。</p>
+              <p>支持 OpenAI Compatible HTTP 接入，也支持本地模型语音转录与本地 VoxCPM 发音，兼顾云端服务与本地隐私处理。</p>
             </article>
           </div>
         </section>
@@ -235,7 +236,7 @@
                       </div>
                     </div>
                   </article>
-                  <article class="settings-slide" data-title="智能发音与音色配置" data-desc="配置默认音色，直接朗读选中文本或回复内容，保持当前暗色、原生感的产品风格。">
+                  <article class="settings-slide" data-title="本地 VoxCPM 克隆发音" data-desc="支持 Local / VoxCPM、本地模型集成、参考音频克隆与自定义声音输出。">
                     <div class="settings-shell settings-shell--app">
                       <aside class="settings-sidebar dark">
                         <div class="settings-group-title">基础能力</div>
@@ -252,14 +253,17 @@
                       <div class="settings-main dark-surface">
                         <div class="settings-topline">
                           <h3>智能发音</h3>
-                          <span class="settings-badge">Edge TTS</span>
+                          <span class="settings-badge">Local / VoxCPM</span>
                         </div>
-                        <p class="settings-lead">支持自定义 Base URL、默认音色与试听文本，适合校对、练习与结果朗读。</p>
+                        <p class="settings-lead">支持本地模型集成、参考音频、极致克隆与声音描述，可直接输出自定义声音并用于试听或结果朗读。</p>
                         <div class="settings-form-card">
-                          <div class="form-row"><span>Base URL</span><b>https://tts.wangwanggit.com</b></div>
-                          <div class="form-row"><span>默认音色</span><b>晓晓（温柔）</b></div>
-                          <div class="form-row"><span>试听文本</span><b>你好，这里是 VoiceIME 的智能发音试听。</b></div>
-                          <div class="form-actions"><button>试听当前音色</button><button class="primary">保存</button></div>
+                          <div class="form-row"><span>Provider 类型</span><b>Local</b></div>
+                          <div class="form-row"><span>Provider</span><b>Local / VoxCPM</b></div>
+                          <div class="form-row"><span>参考音频</span><b>meeting-voice.wav · 已载入</b></div>
+                          <div class="form-row"><span>极致克隆</span><b>已开启 · Prompt Text 模式</b></div>
+                          <div class="form-row"><span>声音描述</span><b>温柔、清晰、偏年轻女声，可自定义输出风格</b></div>
+                          <div class="form-row"><span>试听文本</span><b>你好，这里是 VoiceIME 的本地 VoxCPM 克隆发音试听。</b></div>
+                          <div class="form-actions"><button>试听自定义声音</button><button class="primary">保存</button></div>
                         </div>
                       </div>
                     </div>
@@ -530,8 +534,8 @@
               <h2>常见问题</h2>
               <p>这里整理了首次安装与使用时最常见的问题。</p>
               <div class="faq-glow-card">
-                <span class="caption-pill">v2.6.1 更新</span>
-                <p>新增 Coli 本地语音转录、录音阶段流式预览、回复角色预览，并同步更新 ZIP / DMG 双安装方式说明。</p>
+                <span class="caption-pill">本地模型能力</span>
+                <p>新增本地模型语音转录与 Local / VoxCPM 智能发音，支持参考音频克隆、自定义声音输出，并继续保持 ZIP / DMG 双安装方式。</p>
               </div>
             </div>
             <div class="faq-panel" data-faq>
