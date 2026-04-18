@@ -1831,6 +1831,7 @@ code {
   overflow: hidden;
   border-radius: 30px;
   flex: 1;
+  min-height: 640px;
 }
 
 .settings-carousel-track {
@@ -1841,6 +1842,8 @@ code {
 
 .settings-slide {
   min-width: 100%;
+  display: flex;
+  align-items: stretch;
   opacity: 0.72;
   transform: scale(0.985);
   transition: opacity 0.45s ease, transform 0.45s ease;
@@ -1925,7 +1928,9 @@ code {
 }
 
 .settings-shell--app {
-  min-height: 560px;
+  min-height: 620px;
+  height: 620px;
+  width: 100%;
   background: #1d222d;
 }
 
@@ -2250,6 +2255,7 @@ code {
   .settings-shell {
     grid-template-columns: 1fr;
     min-height: auto;
+    height: auto;
   }
 
   .toolbox-panel,
@@ -2314,6 +2320,9 @@ code {
 }
 
 .settings-slide .settings-shell--app {
+  width: 100%;
+  height: 620px;
+  min-height: 620px;
   transform-origin: center center;
   transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.45s ease;
   box-shadow: 0 28px 60px rgba(8, 14, 28, 0.22);
