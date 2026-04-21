@@ -1,7 +1,7 @@
 {
-  "version": "2.9.6",
-  "build": "46",
-  "url": "https://babyhack-dev.github.io/downloads/VoiceIME-v2.9.6-macOS.zip",
+  "version": "2.9.7",
+  "build": "47",
+  "url": "https://babyhack-dev.github.io/downloads/VoiceIME-v2.9.7-macOS.zip",
   "publishedAt": "2026-04-21",
-  "notesMarkdown": "# VoiceIME v2.9.6\n\n\u53d1\u5e03\u65f6\u95f4\uff1a2026-04-21\n\n## \u66f4\u65b0\u5185\u5bb9\n\n- fix: stabilize pronunciation mode panel positioning"
+  "notesMarkdown": "# VoiceIME v2.9.7\n\n\u53d1\u5e03\u65f6\u95f4\uff1a2026-04-21\n\n## \u66f4\u65b0\u5185\u5bb9\n\n- feat: support hold-to-choose pronunciation mode"
 }
