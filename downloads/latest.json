@@ -1,7 +1,7 @@
 {
-  "version": "2.9.10",
-  "build": "50",
-  "url": "https://babyhack-dev.github.io/downloads/VoiceIME-v2.9.10-macOS.zip",
-  "publishedAt": "2026-04-23",
-  "notesMarkdown": "# VoiceIME v2.9.10\n\n\u53d1\u5e03\u65f6\u95f4\uff1a2026-04-23\n\n## \u66f4\u65b0\u5185\u5bb9\n\n- fix: harden pronunciation runtime lifecycle and virtual mic install flow"
+  "version": "2.9.11",
+  "build": "51",
+  "url": "https://babyhack-dev.github.io/downloads/VoiceIME-v2.9.11-macOS.zip",
+  "publishedAt": "2026-04-24",
+  "notesMarkdown": "# VoiceIME v2.9.11\n\n\u53d1\u5e03\u65f6\u95f4\uff1a2026-04-24\n\n## \u66f4\u65b0\u5185\u5bb9\n\n- chore: release v2.9.11\n- feat: refine voxcpm integration and role selection settings\n- spec: add premium landing page elevation change\n- spec: add product landing page reframe change"
 }
