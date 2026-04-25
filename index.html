@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VoiceIME · macOS AI 输入工作台</title>
+    <title>VoiceIME · macOS 智能语音输入法</title>
     <meta
       name="description"
-      content="VoiceIME 是面向 macOS 的 AI 输入工作台，以菜单栏与全局快捷键为入口，统一语音输入、智能回复、智能发声、智能OCR、角色系统与工具能力。"
+      content="VoiceIME 是面向 macOS 的智能语音输入法，提供语音输入、智能回复、智能发声、智能 OCR 与智能变音能力。"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -14,18 +14,18 @@
     <div class="page-shell">
       <header class="site-header">
         <nav class="nav container">
-          <a class="brand" href="#top">
+          <a class="brand" href="#top" aria-label="VoiceIME 首页">
             <span class="brand-mark">V</span>
             <span>VoiceIME</span>
           </a>
           <div class="nav-links">
             <a href="#overview">概览</a>
             <a href="#preview">产品预览</a>
-            <a href="#capabilities">能力</a>
+            <a href="#capabilities">核心功能</a>
             <a href="#download">下载</a>
           </div>
           <div class="nav-actions">
-            <a class="nav-link-secondary" href="https://github.com/babyhack-dev/ime-ai" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="nav-link-secondary" href="https://github.com/babyhack-dev" target="_blank" rel="noreferrer">GitHub 作者主页</a>
             <a class="nav-button" href="#download">立即下载</a>
           </div>
         </nav>
@@ -33,252 +33,126 @@
 
       <main>
         <section class="hero-section" id="top">
-          <div class="hero-backdrop"></div>
+          <div class="hero-glow hero-glow-a"></div>
+          <div class="hero-glow hero-glow-b"></div>
           <div class="container hero-grid">
             <div class="hero-copy">
               <span class="eyebrow">VoiceIME for macOS</span>
-              <h1>统一你的 AI 输入工作流。</h1>
+              <h1>面向高效表达的智能语音输入法。</h1>
               <p class="hero-desc">
-                VoiceIME 以菜单栏与全局快捷键为入口，将<strong>语音输入、智能回复、智能发声、智能 OCR、角色系统与工具能力</strong>整合到同一套原生 macOS 工作流中。
-                它服务于沟通、写作、整理、朗读与辅助表达等常用任务，帮助你在当前上下文内完成从获取内容到输出结果的完整链路。
+                VoiceIME 以菜单栏与全局快捷键为入口，整合语音输入、智能回复、智能发声、智能 OCR 与智能变音能力，帮助用户在 macOS 上完成输入、理解、生成与表达。产品目前处于正式发布准备阶段，开源计划将通过作者 GitHub 主页同步。
               </p>
               <div class="hero-actions">
                 <a class="button primary" href="#download">下载 VoiceIME</a>
-                <a class="button secondary" href="#preview">查看产品预览</a>
+                <a class="button secondary" href="#preview">查看界面预览</a>
               </div>
-              <div class="hero-meta">
-                <span>原生桌面体验</span>
+              <div class="hero-meta" aria-label="产品特性">
+                <span>原生 macOS</span>
                 <span>菜单栏常驻</span>
                 <span>Local + HTTP</span>
-                <span>角色与历史系统</span>
+                <span>角色系统</span>
+                <span>即将开源</span>
               </div>
             </div>
 
             <div class="hero-showcase" id="overview">
-              <article class="device-window device-window--primary">
-                <div class="window-bar">
-                  <span></span><span></span><span></span>
+              <div class="hero-card">
+                <div class="mac-dots"><span></span><span></span><span></span></div>
+                <div class="hero-preview-shell">
+                  <img src="assets/previews/voice-input.png" alt="VoiceIME 语音输入设置界面" />
                 </div>
-                <div class="window-body app-preview app-preview--settings">
-                  <aside class="preview-sidebar">
-                    <div class="preview-sidebar-title">VoiceIME</div>
-                    <div class="preview-nav active">账号认证</div>
-                    <div class="preview-nav">快捷键</div>
-                    <div class="preview-nav">语音输入</div>
-                    <div class="preview-nav">智能回复</div>
-                    <div class="preview-nav">智能发声</div>
-                    <div class="preview-nav muted">工具魔盒</div>
-                  </aside>
-                  <div class="preview-main">
-                    <div class="preview-caption">设置中心</div>
-                    <h3>统一配置入口</h3>
-                    <p>认证、快捷键、输入、回复、发声、角色与工具能力在同一设置工作台中完成配置。</p>
-                    <div class="preview-status-row">
-                      <span class="status-dot success"></span>
-                      <strong>已登录 ChatGPT 账号</strong>
-                      <button>退出登录</button>
-                    </div>
-                    <div class="preview-form-grid">
-                      <div class="preview-chip selected">OAuth ChatGPT</div>
-                      <div class="preview-chip">STT API Key</div>
-                    </div>
-                  </div>
-                </div>
-              </article>
-
-              <article class="device-window device-window--floating device-window--menu">
-                <div class="window-body menu-preview">
-                  <div class="menu-title">语音输入</div>
-                  <div class="menu-item">智能回复 <span>⌃⌘U</span></div>
-                  <div class="menu-item">智能发声 <span>⌃⌘O</span></div>
-                  <div class="menu-item">智能 OCR <span>⌃⌘P</span></div>
-                  <div class="menu-divider"></div>
-                  <div class="menu-section-title">最近记录</div>
-                  <div class="menu-history-item">
-                    <small>04/23 23:34</small>
-                    <strong>转录  嗨，大家好。</strong>
-                  </div>
-                  <div class="menu-button">更多语音历史...</div>
-                </div>
-              </article>
-
-              <article class="device-window device-window--floating device-window--speech">
-                <div class="window-body speech-preview">
-                  <div class="speech-title">智能发声</div>
-                  <div class="speech-row"><span>Provider 类型</span><b>Local</b></div>
-                  <div class="speech-row"><span>Provider</span><b>Local / VoxCPM</b></div>
-                  <div class="speech-card">
-                    <div class="speech-card-head">
-                      <strong>参考音频素材</strong>
-                      <span>未选择参考音频</span>
-                    </div>
-                    <p>支持参考音频、录音来源、试听与虚拟麦克风链路。</p>
-                    <div class="speech-actions">
-                      <button>按住录音</button>
-                      <button>上传音频</button>
-                    </div>
-                  </div>
-                </div>
-              </article>
+              </div>
+              <div class="floating-panel panel-reply">
+                <span>智能回复</span>
+                <strong>理解上下文，快速生成可用回复</strong>
+              </div>
+              <div class="floating-panel panel-ocr">
+                <span>智能 OCR</span>
+                <strong>识别文字与二维码，衔接后续处理</strong>
+              </div>
             </div>
           </div>
         </section>
 
-        <section class="section container section-intro">
-          <div class="hero-stats">
-            <div class="stat-card">
-              <strong>统一入口</strong>
-              <span>从菜单栏到设置中心，形成一套完整产品面。</span>
-            </div>
-            <div class="stat-card">
-              <strong>真实工作流</strong>
-              <span>覆盖语音、文本、回复、发声、OCR 与辅助工具。</span>
-            </div>
-            <div class="stat-card">
-              <strong>双路线支持</strong>
-              <span>兼容本地运行时与在线服务，适配不同环境与偏好。</span>
-            </div>
-          </div>
+        <section class="section container feature-strip" aria-label="核心能力速览">
+          <article><b>语音输入法</b><span>说话即输入，支持本地与在线识别配置。</span></article>
+          <article><b>智能回复</b><span>基于角色生成回复、翻译与润色内容。</span></article>
+          <article><b>智能发声</b><span>将文字转换为自然语音，支持试听与输出链路。</span></article>
+          <article><b>智能 OCR</b><span>识别截图文字与二维码，提升桌面信息处理效率。</span></article>
+          <article><b>智能变音</b><span>独立配置识别、角色与发声，形成完整变音流程。</span></article>
         </section>
 
-        <section class="section container" id="preview">
+        <section class="section container preview-section" id="preview">
           <div class="section-heading section-heading--wide">
             <span class="eyebrow soft">Product Preview</span>
-            <h2>真实产品界面，而非抽象概念图。</h2>
-            <p>
-              基于当前产品功能结构，首页直接展示菜单栏、设置页、角色系统与工具能力的真实界面语义，帮助你快速判断它是否适合你的日常工作方式。
-            </p>
+            <h2>产品界面轮转预览。</h2>
+            <p>以下预览展示 VoiceIME 当前核心设置页与角色系统。界面结构贴近真实使用路径，便于下载前快速了解产品形态。</p>
           </div>
-          <div class="preview-gallery">
-            <article class="gallery-card gallery-card--wide">
-              <div class="gallery-copy">
-                <span class="card-kicker">Settings Workspace</span>
-                <h3>统一设置中心</h3>
-                <p>账号认证、快捷键、语音输入、智能回复、智能发声、角色系统与工具魔盒都集中在统一工作台中，结构清晰，便于长期使用与维护。</p>
-              </div>
-              <div class="gallery-visual settings-visual">
-                <div class="mini-sidebar">
-                  <span class="active">账号认证</span>
-                  <span>快捷键</span>
-                  <span>语音输入</span>
-                  <span>智能回复</span>
-                  <span>智能发声</span>
-                </div>
-                <div class="mini-main">
-                  <div class="mini-line large"></div>
-                  <div class="mini-line"></div>
-                  <div class="mini-tabs">
-                    <span class="active">OAuth ChatGPT</span>
-                    <span>STT API Key</span>
-                  </div>
-                  <div class="mini-status-card">
-                    <b>已登录 ChatGPT 账号</b>
-                    <button>退出登录</button>
-                  </div>
-                </div>
-              </div>
-            </article>
 
-            <article class="gallery-card">
-              <div class="gallery-copy">
-                <span class="card-kicker">Menu Bar</span>
-                <h3>菜单栏主入口</h3>
-                <p>围绕语音输入、智能回复、智能发声与智能 OCR 组织常用能力，并保留最近记录、设置与快速入口。</p>
+          <div class="preview-carousel" aria-label="VoiceIME 产品功能轮播预览图">
+            <div class="carousel-frame">
+              <div class="carousel-track">
+                <figure class="slide">
+                  <img src="assets/previews/voice-input.png" alt="语音输入功能预览" />
+                  <figcaption><b>语音输入</b><span>本地 SenseVoice、录音来源、文本润色与注入方式统一配置。</span></figcaption>
+                </figure>
+                <figure class="slide">
+                  <img src="assets/previews/smart-reply.png" alt="智能回复功能预览" />
+                  <figcaption><b>智能回复</b><span>复用认证状态，选择回复角色并配置模型参数。</span></figcaption>
+                </figure>
+                <figure class="slide">
+                  <img src="assets/previews/smart-speech.png" alt="智能发声功能预览" />
+                  <figcaption><b>智能发声</b><span>支持 HTTP / Local provider、声音设计、试听文本与播放设备。</span></figcaption>
+                </figure>
+                <figure class="slide">
+                  <img src="assets/previews/voice-transform.png" alt="智能变音功能预览" />
+                  <figcaption><b>智能变音</b><span>独立配置输入识别与发声链路，覆盖按住说话后的处理流程。</span></figcaption>
+                </figure>
+                <figure class="slide">
+                  <img src="assets/previews/speech-roles.png" alt="发言角色功能预览" />
+                  <figcaption><b>发言角色</b><span>按场景维护润色提示词，支持激活、编辑、排序与模板恢复。</span></figcaption>
+                </figure>
+                <figure class="slide">
+                  <img src="assets/previews/reply-roles.png" alt="回复角色功能预览" />
+                  <figcaption><b>回复角色</b><span>多角色并发生成回复，覆盖沟通、翻译与快速判断场景。</span></figcaption>
+                </figure>
               </div>
-              <div class="gallery-visual menu-visual">
-                <div class="menu-panel-visual">
-                  <div class="menu-line strong">语音输入</div>
-                  <div class="menu-line">智能回复</div>
-                  <div class="menu-line">智能发声</div>
-                  <div class="menu-line">智能 OCR</div>
-                  <div class="mini-divider"></div>
-                  <div class="menu-small">最近记录</div>
-                  <div class="menu-history">转录  嗨，大家好。</div>
-                </div>
-              </div>
-            </article>
-
-            <article class="gallery-card">
-              <div class="gallery-copy">
-                <span class="card-kicker">Smart Speech</span>
-                <h3>发声与语音输出</h3>
-                <p>面向 Edge TTS 与 Local / VoxCPM，提供参考音频、录音来源、试听与虚拟麦克风等配置链路。</p>
-              </div>
-              <div class="gallery-visual speech-visual">
-                <div class="speech-panel-visual">
-                  <div class="speech-pill">Local / VoxCPM</div>
-                  <div class="speech-box">
-                    <b>参考音频来源</b>
-                    <span>麦克风（默认）</span>
-                    <div class="speech-actions small">
-                      <button>按住录音</button>
-                      <button>上传音频</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="gallery-card gallery-card--wide">
-              <div class="gallery-copy">
-                <span class="card-kicker">Roles & Toolbox</span>
-                <h3>角色系统与工具能力</h3>
-                <p>发言角色、回复角色与工具魔盒作为长期能力层存在，让 VoiceIME 不止于输入，更具备持续扩展的工作台属性。</p>
-              </div>
-              <div class="gallery-visual dual-visual">
-                <div class="role-visual">
-                  <div class="role-item active">语言大师</div>
-                  <div class="role-item">老板</div>
-                  <div class="role-item">员工</div>
-                </div>
-                <div class="tool-visual">
-                  <div class="tool-header">二维码生成</div>
-                  <div class="tool-columns">
-                    <div class="tool-box"></div>
-                    <div class="tool-box placeholder">暂无二维码预览</div>
-                  </div>
-                </div>
-              </div>
-            </article>
+            </div>
+            <div class="carousel-dots" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
           </div>
         </section>
 
         <section class="section container" id="capabilities">
           <div class="section-heading">
             <span class="eyebrow soft">Capabilities</span>
-            <h2>围绕输入与输出的完整能力体系。</h2>
-            <p>VoiceIME 不是单一功能应用，而是一组可以协同工作的原生桌面能力。</p>
+            <h2>覆盖输入、回复、识别、发声与变音的完整能力。</h2>
+            <p>VoiceIME 将高频桌面表达任务集中到同一套原生工作流中，配置清晰，触发迅速，结果可直接进入当前应用。</p>
           </div>
           <div class="capability-grid">
-            <article class="capability-card">
+            <article class="capability-card accent-blue">
               <span class="card-kicker">Voice Input</span>
-              <h3>语音输入</h3>
-              <p>支持 HTTP 与本地 STT 路线，围绕录音来源、运行时、模型与注入方式形成完整配置面。</p>
+              <h3>语音输入法</h3>
+              <p>通过快捷键启动录音，自动完成语音识别、文本润色与内容注入。支持 HTTP provider 与本地 SenseVoice 方案。</p>
             </article>
-            <article class="capability-card">
+            <article class="capability-card accent-violet">
               <span class="card-kicker">Smart Reply</span>
               <h3>智能回复</h3>
-              <p>支持模型配置、角色复用与多选并发生成，适合沟通、翻译、整理与结构化回复。</p>
+              <p>基于选中文本或当前输入生成自然回复。支持多角色并发、翻译、润色与结构化输出。</p>
             </article>
-            <article class="capability-card">
+            <article class="capability-card accent-cyan">
               <span class="card-kicker">Smart Speech</span>
               <h3>智能发声</h3>
-              <p>统一在线与本地发声 provider，支持试听、参考音频、录音来源与虚拟麦克风链路。</p>
+              <p>将文本转换为语音内容，支持 Edge TTS、VoxCPM Remote、本地发声链路、试听与播放设备选择。</p>
             </article>
-            <article class="capability-card">
+            <article class="capability-card accent-green">
               <span class="card-kicker">Smart OCR</span>
               <h3>智能 OCR</h3>
-              <p>将截图取字与二维码识别纳入统一工作流，继续进入后续编辑、回复或发声步骤。</p>
+              <p>识别截图中的文字与二维码信息，将桌面内容快速转为可复制、可处理、可继续生成的文本。</p>
             </article>
-            <article class="capability-card">
-              <span class="card-kicker">Prompt System</span>
-              <h3>角色系统</h3>
-              <p>发言角色与回复角色分工明确，支持排序、切换、模板恢复与长期维护。</p>
-            </article>
-            <article class="capability-card">
-              <span class="card-kicker">Toolbox</span>
-              <h3>工具魔盒</h3>
-              <p>提供轻量原生工具能力，当前优先提供二维码生成与预览，后续可继续扩展。</p>
+            <article class="capability-card accent-orange">
+              <span class="card-kicker">Voice Transform</span>
+              <h3>智能变音</h3>
+              <p>为变音场景独立配置 STT、角色与发声 provider，按住说话后输出目标声音，适配直播、会议与内容创作。</p>
             </article>
           </div>
         </section>
@@ -286,26 +160,14 @@
         <section class="section container premium-section">
           <div class="premium-shell">
             <div class="premium-copy">
-              <span class="eyebrow soft">Designed for native macOS</span>
-              <h2>以原生桌面体验为前提，而不是把网页操作搬进应用。</h2>
-              <p>
-                VoiceIME 的设计重点，是让菜单栏、快捷键、设置中心、历史系统与角色系统形成稳定的原生工作方式。
-                这意味着它既适合快速触发，也适合长期配置与持续使用。
-              </p>
+              <span class="eyebrow soft">Native Workflow</span>
+              <h2>为 macOS 桌面工作流设计。</h2>
+              <p>VoiceIME 将菜单栏、快捷键、设置中心、历史记录与角色系统连接为稳定的产品体验。用户可以快速触发，也可以长期维护个性化配置。</p>
             </div>
             <div class="premium-points">
-              <div class="premium-point">
-                <strong>菜单栏作为第一入口</strong>
-                <p>高频动作常驻可达，减少页面跳转与上下文切换。</p>
-              </div>
-              <div class="premium-point">
-                <strong>原生配置与历史系统</strong>
-                <p>从权限、认证到历史追溯，都以长期使用为前提组织。</p>
-              </div>
-              <div class="premium-point">
-                <strong>本地与在线能力并存</strong>
-                <p>让 VoiceIME 同时兼顾效率、可用性与灵活的部署偏好。</p>
-              </div>
+              <div class="premium-point"><strong>菜单栏常驻</strong><p>核心动作保持可达，适合高频输入与即时表达。</p></div>
+              <div class="premium-point"><strong>角色驱动</strong><p>发言角色与回复角色分工明确，场景切换更高效。</p></div>
+              <div class="premium-point"><strong>本地与在线并行</strong><p>按能力选择 Local 或 HTTP provider，适配不同部署偏好。</p></div>
             </div>
           </div>
         </section>
@@ -315,13 +177,11 @@
             <div class="download-copy">
               <span class="eyebrow soft">Download</span>
               <h2>立即体验 VoiceIME。</h2>
-              <p>
-                当前分发包提供 ZIP 与 DMG 两种安装路径。下载 ZIP 后，可直接运行 <code>install.sh</code>，或打开其中的 <code>VoiceIME.dmg</code> 完成图形化安装。
-              </p>
+              <p>发布包提供 ZIP 与 DMG 两种安装路径。下载 ZIP 后，可运行 <code>install.sh</code>，也可打开其中的 <code>VoiceIME.dmg</code> 完成图形化安装。</p>
               <div class="download-steps">
                 <div class="download-step"><b>1</b><span>下载并解压发布包</span></div>
                 <div class="download-step"><b>2</b><span>运行 <code>./install.sh</code> 或打开 DMG</span></div>
-                <div class="download-step"><b>3</b><span>首次启动后完成必要权限授权</span></div>
+                <div class="download-step"><b>3</b><span>按照系统提示完成权限授权</span></div>
               </div>
             </div>
             <aside class="release-card">
@@ -334,14 +194,14 @@
               <a class="button primary release-download" href="downloads/VoiceIME-v3.0.1-macOS.zip" target="_blank" rel="noreferrer">下载 VoiceIME v3.0.1 ZIP</a>
               <p class="release-subtitle">发布包文件名：<code>VoiceIME-v3.0.1-macOS.zip</code></p>
               <div class="release-terminal">
-                <div class="window-bar small-bar"><span></span><span></span><span></span></div>
+                <div class="mac-dots small-bar"><span></span><span></span><span></span></div>
                 <code>
                   unzip VoiceIME-v3.0.1-macOS.zip<br />
-                  cd VoiceIME-v2.9.10-macOS<br />
+                  cd VoiceIME-v3.0.1-macOS<br />
                   ./install.sh
                 </code>
               </div>
-              <a class="release-link" href="https://github.com/babyhack-dev/ime-ai/releases" target="_blank" rel="noreferrer">查看版本说明</a>
+              <a class="release-link" href="https://github.com/babyhack-dev" target="_blank" rel="noreferrer">访问作者主页</a>
             </aside>
           </div>
         </section>
@@ -350,37 +210,38 @@
           <div class="section-heading">
             <span class="eyebrow soft">FAQ</span>
             <h2>常见问题</h2>
-            <p>以下问题通常有助于快速判断 VoiceIME 是否符合你的使用方式。</p>
+            <p>以下内容帮助用户快速完成安装前评估。</p>
           </div>
           <div class="faq-grid">
             <details class="faq-item" open>
               <summary>VoiceIME 适合哪些场景？</summary>
-              <p>适合聊天沟通、邮件处理、文档整理、截图取字、翻译润色、朗读与辅助表达等需要频繁切换输入方式的桌面场景。</p>
+              <p>适合聊天沟通、邮件处理、文档整理、截图取字、翻译润色、朗读、变音输出与辅助表达等桌面场景。</p>
             </details>
             <details class="faq-item">
-              <summary>它只支持在线模型吗？</summary>
-              <p>不是。VoiceIME 同时支持在线服务与本地运行时，可按具体能力选择 HTTP provider 或本地路线。</p>
+              <summary>VoiceIME 是否开源？</summary>
+              <p>VoiceIME 目前处于开源准备阶段。开源信息、发布动态与后续说明将通过作者 GitHub 主页同步。</p>
             </details>
             <details class="faq-item">
-              <summary>产品预览是否对应真实功能界面？</summary>
-              <p>是。官网中的预览模块基于当前产品功能结构与真实页面语义组织，便于你在下载前直观看到产品形态。</p>
+              <summary>支持哪些接入方式？</summary>
+              <p>VoiceIME 支持在线服务与本地运行时，可按功能选择 HTTP provider 或 Local provider。</p>
             </details>
             <details class="faq-item">
-              <summary>首次安装后需要做什么？</summary>
-              <p>完成安装后，根据系统提示授权录音、辅助功能、屏幕录制等必要权限，即可开始使用主要能力。</p>
+              <summary>产品预览对应真实功能界面吗？</summary>
+              <p>官网预览基于当前产品功能结构与真实页面语义组织，展示下载后的主要配置路径。</p>
+            </details>
+            <details class="faq-item">
+              <summary>首次安装后需要完成哪些配置？</summary>
+              <p>启动应用后，根据系统提示授权录音、辅助功能、屏幕录制等必要权限，即可使用核心能力。</p>
             </details>
           </div>
         </section>
       </main>
 
       <footer class="footer container">
-        <div>
-          <strong>VoiceIME</strong>
-          <p>macOS AI 输入工作台</p>
-        </div>
+        <div><strong>VoiceIME</strong><p>macOS 智能语音输入法</p></div>
         <div class="footer-links">
           <a href="#top">回到顶部 ↑</a>
-          <a href="https://github.com/babyhack-dev/ime-ai" target="_blank" rel="noreferrer">项目仓库</a>
+          <a href="https://github.com/babyhack-dev" target="_blank" rel="noreferrer">GitHub 作者主页</a>
         </div>
       </footer>
     </div>
