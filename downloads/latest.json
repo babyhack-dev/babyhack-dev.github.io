@@ -1,7 +1,7 @@
 {
-  "version": "3.0.4",
-  "build": "56",
-  "url": "https://babyhack-dev.github.io/downloads/VoiceIME-v3.0.4-macOS.zip",
+  "version": "3.0.5",
+  "build": "57",
+  "url": "https://babyhack-dev.github.io/downloads/VoiceIME-v3.0.5-macOS.zip",
   "publishedAt": "2026-04-27",
-  "notesMarkdown": "# VoiceIME v3.0.4\n\n\u53d1\u5e03\u65f6\u95f4\uff1a2026-04-27\n\n## \u66f4\u65b0\u5185\u5bb9\n\n- Consolidate app settings and history search\n- Polish About update actions"
+  "notesMarkdown": "# VoiceIME v3.0.5\n\n\u53d1\u5e03\u65f6\u95f4\uff1a2026-04-27\n\n## \u66f4\u65b0\u5185\u5bb9\n\n- fix: stabilize recording buttons for macOS compatibility"
 }
