@@ -1,7 +1,7 @@
 {
-  "version": "3.3.10",
-  "build": "74",
-  "url": "https://babyhack-dev.github.io/downloads/VoiceIME-v3.3.10-macOS.zip",
-  "publishedAt": "2026-05-09",
-  "notesMarkdown": "# VoiceIME v3.3.10\n\n\u53d1\u5e03\u65f6\u95f4\uff1a2026-05-09\n\n## \u66f4\u65b0\u5185\u5bb9\n\n- fix: stabilize live subtitle hud anchoring"
+  "version": "3.4.0",
+  "build": "76",
+  "url": "https://babyhack-dev.github.io/downloads/VoiceIME-v3.4.0-macOS.zip",
+  "publishedAt": "2026-05-13",
+  "notesMarkdown": "# VoiceIME v3.4.0\n\n\u53d1\u5e03\u65f6\u95f4\uff1a2026-05-13\n\n## \u66f4\u65b0\u5185\u5bb9\n\n- Release VoiceIME 3.4.0\n- Polish menu bar and voice typing HUD icons\n- Add Typeless-style Fn voice typing\n- chore: archive live subtitle hud stabilization spec"
 }
