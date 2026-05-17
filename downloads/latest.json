@@ -1,7 +1,7 @@
 {
-  "version": "3.4.3",
+  "version": "3.4.4",
   "build": "79",
-  "url": "https://babyhack-dev.github.io/downloads/VoiceIME-v3.4.3-macOS.zip",
+  "url": "https://babyhack-dev.github.io/downloads/VoiceIME-v3.4.4-macOS.zip",
   "publishedAt": "2026-05-18",
-  "notesMarkdown": "# VoiceIME v3.4.3\n\n\u53d1\u5e03\u65f6\u95f4\uff1a2026-05-18\n\n## \u66f4\u65b0\u5185\u5bb9\n\n- fix: stabilize screenshot OCR lifecycle\n- Reduce menu bar icon horizontal padding"
+  "notesMarkdown": "# VoiceIME v3.4.4\n\n\u53d1\u5e03\u65f6\u95f4\uff1a2026-05-18\n\n## \u66f4\u65b0\u5185\u5bb9\n\n- feat: add phonetic master and smart reply QR"
 }
