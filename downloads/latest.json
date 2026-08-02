@@ -1,7 +1,7 @@
 {
-  "version": "3.4.17",
-  "build": "90",
-  "url": "https://babyhack-dev.github.io/downloads/VoiceIME-v3.4.17-macOS.zip",
+  "version": "3.4.18",
+  "build": "91",
+  "url": "https://babyhack-dev.github.io/downloads/VoiceIME-v3.4.18-macOS.zip",
   "publishedAt": "2026-08-02",
-  "notesMarkdown": "# VoiceIME v3.4.17\n\n\u53d1\u5e03\u65f6\u95f4\uff1a2026-08-02\n\n## \u66f4\u65b0\u5185\u5bb9\n\n- chore: release VoiceIME v3.4.17\n- feat: add multi-account ChatGPT credentials"
+  "notesMarkdown": "# VoiceIME v3.4.18\n\n发布时间：2026-08-02\n\n## 更新内容\n\n- fix: make release tag lookup portable\n- chore: release VoiceIME v3.4.18\n- feat: refine multi-account authentication UI"
 }
