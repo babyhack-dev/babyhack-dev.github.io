@@ -1,7 +1,7 @@
 {
-  "version": "3.4.19",
-  "build": "92",
-  "url": "https://babyhack-dev.github.io/downloads/VoiceIME-v3.4.19-macOS.zip",
-  "publishedAt": "2026-08-02",
-  "notesMarkdown": "# VoiceIME v3.4.19\n\n发布时间：2026-08-02\n\n## 更新内容\n\n- chore: release VoiceIME v3.4.19\n- fix: reset permissions against the installed app"
+  "version": "3.4.20",
+  "build": "93",
+  "url": "https://babyhack-dev.github.io/downloads/VoiceIME-v3.4.20-macOS.zip",
+  "publishedAt": "2026-08-18",
+  "notesMarkdown": "# VoiceIME v3.4.20\n\n发布时间：2026-08-18\n\n## 更新内容\n\n- chore: release VoiceIME v3.4.20\n- feat: add native image watermark editor"
 }
