@@ -1,7 +1,7 @@
 {
-  "version": "3.4.24",
-  "build": "97",
-  "url": "https://babyhack-dev.github.io/downloads/VoiceIME-v3.4.24-macOS.zip",
+  "version": "3.5.0",
+  "build": "98",
+  "url": "https://babyhack-dev.github.io/downloads/VoiceIME-v3.5.0-macOS.zip",
   "publishedAt": "2026-10-04",
-  "notesMarkdown": "# VoiceIME v3.4.24\n\n发布时间：2026-10-04\n\n## 更新内容\n\n- fix: stabilize OCR bubble attachment on macOS 27"
+  "notesMarkdown": "# VoiceIME v3.5.0\n\n发布时间：2026-10-04\n\n## 更新内容\n\n- fix: stabilize cancellation and audio lifecycle for v3.5.0"
 }
